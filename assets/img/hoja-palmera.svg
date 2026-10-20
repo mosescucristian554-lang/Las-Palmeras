@@ -1,0 +1,25 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220">
+  <defs>
+    <path id="l" d="M0 0 Q22 -7 56 0 Q22 5 0 0Z"/>
+  </defs>
+  <g fill="#3d5a44">
+    <path d="M12 205 Q90 122 192 22" fill="none" stroke="#3d5a44" stroke-width="3.2" stroke-linecap="round"/>
+    <use href="#l" transform="translate(49 158) rotate(-118) scale(1.15)"/>
+    <use href="#l" transform="translate(64 143) rotate(-114) scale(1.2)"/>
+    <use href="#l" transform="translate(80 128) rotate(-110) scale(1.15)"/>
+    <use href="#l" transform="translate(96 112) rotate(-106) scale(1.05)"/>
+    <use href="#l" transform="translate(113 96) rotate(-100) scale(0.95)"/>
+    <use href="#l" transform="translate(130 79) rotate(-95) scale(0.82)"/>
+    <use href="#l" transform="translate(148 62) rotate(-88) scale(0.68)"/>
+    <use href="#l" transform="translate(166 44) rotate(-80) scale(0.5)"/>
+    <use href="#l" transform="translate(49 158) rotate(28) scale(1.15)"/>
+    <use href="#l" transform="translate(64 143) rotate(24) scale(1.2)"/>
+    <use href="#l" transform="translate(80 128) rotate(20) scale(1.15)"/>
+    <use href="#l" transform="translate(96 112) rotate(14) scale(1.05)"/>
+    <use href="#l" transform="translate(113 96) rotate(8) scale(0.95)"/>
+    <use href="#l" transform="translate(130 79) rotate(2) scale(0.82)"/>
+    <use href="#l" transform="translate(148 62) rotate(-6) scale(0.68)"/>
+    <use href="#l" transform="translate(166 44) rotate(-14) scale(0.5)"/>
+    <use href="#l" transform="translate(188 26) rotate(-45) scale(0.35)"/>
+  </g>
+</svg>

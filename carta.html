@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>La Carta · Las Palmeras</title>
+  <meta name="description" content="Carta de la Cafetería Las Palmeras en Ciempozuelos: desayunos, tostas, ensaladas gourmet, raciones, hamburguesas, sándwiches, cafés y bebidas." />
+  <meta name="theme-color" content="#fbf6ee" />
+  <link rel="icon" href="assets/img/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700&family=Pinyon+Script&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=20261019" />
+  <script defer src="main.js?v=20261019"></script>
+</head>
+<body>
+
+  <!-- ===== Navegación ===== -->
+  <header class="nav" data-nav>
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Las Palmeras — inicio">
+        <img src="assets/img/logo.png" alt="" />
+        <span>Las Palmeras</span>
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span></button>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="carta.html" aria-current="page">Carta</a></li>
+        <li><a href="promociones.html">Promociones</a></li>
+        <li>
+          <a class="nav-ig" href="https://www.instagram.com/cpmlaspalmeras/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            Instagram
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <img class="page-head-bg" src="assets/img/tosta.png" alt="" />
+      <img class="leaf leaf--tl" src="assets/img/hoja-palmera.svg" alt="" aria-hidden="true" />
+      <img class="leaf leaf--tr" src="assets/img/hoja-palmera.svg" alt="" aria-hidden="true" />
+      <div class="container">
+        <p class="kicker rise">Cocina de Las Palmeras</p>
+        <h1 class="page-title rise" data-delay="1">La <span class="script">Carta</span></h1>
+        <p class="page-sub rise" data-delay="2">Del primer café de la mañana a la última ración de la noche. Todo pensado para compartir a la sombra de las palmeras.</p>
+
+        <div class="allergen-bar rise" data-delay="3" role="group" aria-label="Señalar platos con alérgenos">
+          <span>Alérgenos</span>
+          <button class="chip" type="button" data-allergen="gluten" aria-pressed="false">Gluten</button>
+          <button class="chip" type="button" data-allergen="huevos" aria-pressed="false">Huevos</button>
+          <button class="chip" type="button" data-allergen="lacteos" aria-pressed="false">Lácteos</button>
+          <button class="chip" type="button" data-allergen="pescado" aria-pressed="false">Pescado</button>
+          <button class="chip" type="button" data-allergen="crustaceos" aria-pressed="false">Crustáceos</button>
+          <button class="chip" type="button" data-allergen="moluscos" aria-pressed="false">Moluscos</button>
+          <button class="chip" type="button" data-allergen="frutos-secos" aria-pressed="false">Frutos secos</button>
+          <button class="chip" type="button" data-allergen="soja" aria-pressed="false">Soja</button>
+          <button class="chip" type="button" data-allergen="sesamo" aria-pressed="false">Sésamo</button>
+          <button class="chip" type="button" data-allergen="mostaza" aria-pressed="false">Mostaza</button>
+          <button class="chip" type="button" data-allergen="sulfitos" aria-pressed="false">Sulfitos</button>
+        </div>
+        <p class="allergen-note" data-allergen-note aria-live="polite">Marca un alérgeno para señalar los platos que lo contienen.</p>
+      </div>
+    </section>
+
+    <nav class="menu-tabs" aria-label="Secciones de la carta">
+      <div class="menu-tabs-inner" data-menu-tabs>
+        <a href="#desayunos">Desayunos</a>
+        <a href="#tostas">Tostas y canapés</a>
+        <a href="#ensaladas">Ensaladas</a>
+        <a href="#raciones">Raciones</a>
+        <a href="#recomendaciones">Recomendaciones</a>
+        <a href="#hamburguesas">Hamburguesas</a>
+        <a href="#sandwiches">Sándwiches</a>
+        <a href="#cafes">Cafés</a>
+        <a href="#bebidas">Bebidas</a>
+      </div>
+    </nav>
+
+    <div class="menu">
+      <div class="container">
+
+        <!-- 01 Desayunos -->
+        <section class="menu-section" id="desayunos">
+          <header class="menu-section-head reveal">
+            <span class="num">01</span>
+            <div><h2>Desayunos</h2><p>Para empezar el día con buen pie</p></div>
+          </header>
+          <ul class="menu-list">
+            <li class="dish" data-a="gluten lacteos"><div class="dish-top"><span class="dish-name">Mollete con mantequilla y mermelada</span><span class="dish-dots"></span><span class="dish-price">3,70 €</span></div><div class="dish-tags"><span>Gluten</span><span>Lácteos</span></div></li>
+            <li class="dish" data-a="gluten"><div class="dish-top"><span class="dish-name">Mollete con tomate y AOVE</span><span class="dish-dots"></span><span class="dish-price">3,70 €</span></div><div class="dish-tags"><span>Gluten</span></div></li>
+            <li class="dish" data-a="gluten huevos lacteos"><div class="dish-top"><span class="dish-name">Mollete con aguacate, huevo poché y queso crema</span><span class="dish-dots"></span><span class="dish-price">4,20 €</span></div><div class="dish-tags"><span>Gluten</span><span>Huevos</span><span>Lácteos</span></div></li>
+            <li class="dish" data-a="gluten lacteos"><div class="dish-top"><span class="dish-name">Tostada de pan de molde con mantequilla y mermelada</span><span class="dish-dots"></span><span class="dish-price">3,70 €</span></div><div class="dish-tags"><span>Gluten</span><span>Lácteos</span></div></li>
+            <li class="dish" data-a="gluten huevos lacteos"><div class="dish-top"><span class="dish-name">Croissant con mermelada y mantequilla, o solo</span><span class="dish-dots"></span><span class="dish-price">3,70 €</span></div><div class="dish-tags"><span>Gluten</span><span>Huevos</span><span>Lácteos</span></div></li>
+            <li class="dish" data-a="gluten huevos lacteos soja"><div class="dish-top"><span class="dish-name">Napolitana de crema o chocolate</span><span class="dish-dots"></span><span class="dish-price">3,70 €</span></div><div class="dish-tags"><span>Gluten</span><span>Huevos</span><span>Lácteos</span><span>Soja</span></div></li>
+            <li class="dish" data-a="huevos"><div class="dish-top"><span class="dish-name">Pincho de tortilla</span><span class="dish-dots"></span><span class="dish-price">3,00 €</span></div><div class="dish-tags"><span>Huevos</span></div></li>
+            <li class="dish" data-a="huevos"><div class="dish-top"><span class="dish-name">Tortilla de patata entera</span><span class="dish-dots"></span><span class="dish-price">17,00 €</span></div><div class="dish-tags"><span>Huevos</span></div></li>
+            <li class="dish" data-a="gluten huevos lacteos"><div class="dish-top"><span class="dish-name">Tarta de queso artesanal</span><span class="dish-dots"></span><span class="dish-price">5,50 €</span></div><div class="dish-tags"><span>Gluten</span><span>Huevos</span><span>Lácteos</span></div></li>
+            <li class="dish" data-a="gluten huevos lacteos soja"><div class="dish-top"><span class="dish-name">Tarta tres chocolates</span><span class="dish-dots"></span><span class="dish-price">5,50 €</span></div><div class="dish-tags"><span>Gluten</span><span>Huevos</span><span>Lácteos</span><span>Soja</span></div></li>
+            <li class="dish" data-a="gluten huevos lacteos"><div class="dish-top"><span class="dish-name">Tarta de la semana</span><span class="dish-dots"></span><span class="dish-price">6,00 €</span></div><div class="dish-tags"><span>Gluten</span><span>Huevos</span><span>Lácteos</span></div></li>
+            <li class="dish" data-a="gluten huevos lacteos"><div class="dish-top"><span class="dish-name">Bizcocho casero</span><span class="dish-dots"></span><span class="dish-price">3,00 €</span></div><div class="dish-tags"><span>Gluten</span><span>Huevos</span><span>Lácteos</span></div></li>
+          </ul>
+        </section>
+
+        <!-- 02 Tostas -->
+        <section class="menu-section" id="tostas">
+          <header class="menu-section-head reveal">
+            <span class="num">02</span>
+            <div><h2>Tostas y canapés gourmet</h2><p>Sobre pan crujiente, recién tostado</p></div>
+          </header>
+          <ul class="menu-list">
+            <li class="dish" data-a="gluten"><div class="dish-top"><span class="dish-name">Tosta de jamón ibérico con tomate</span><span class="dish-dots"></span><span class="dish-price">9,50 €</span></div><div class="dish-tags"><span>Gluten</span></div></li>
+            <li class="dish" data-a="gluten huevos sulfitos"><div class="dish-top"><span class="dish-name">Tosta de foie de pato con cebolla caramelizada</span><span class="dish-dots"></span><span class="dish-price">13,95 €</span></div><div class="dish-tags"><span>Gluten</span><span>Huevos</span><span>Sulfitos</span></div></li>
+            <li class="dish" data-a="gluten pescado"><div class="dish-top"><span class="dish-name">Canapé de sardina ahumada</span><span class="dish-dots"></span><span class="dish-price">6,00 €</span></div><div class="dish-tags"><span>Gluten</span><span>Pescado</span></div></li>
+            <li class="dish" data-a="gluten pescado"><div class="dish-top"><span class="dish-name">Pulga matrimonio<small>Sardina del Cantábrico y boquerón en vinagre</small></span><span class="dish-dots"></span><span class="dish-price">6,00 €</span></div><div class="dish-tags"><span>Gluten</span><span>Pescado</span></div></li>
+          </ul>
+          <figure class="menu-feature reveal" style="margin-inline:0"><img src="assets/img/tosta.png" alt="" loading="lazy" /><p>Pan bien tostado, buen producto y poco más.</p></figure>
+        </section>
+
+        <!-- 03 Ensaladas -->
+        <section class="menu-section" id="ensaladas">
+          <header class="menu-section-head reveal">
+            <span class="num">03</span>
+            <div><h2>Ensaladas gourmet</h2><p>Frescas y de temporada</p></div>
+          </header>
+          <ul class="menu-list">
+            <li class="dish" data-a=""><div class="dish-top"><span class="dish-name">Ensalada de tomate de temporada, cebolla morada y AOVE</span><span class="dish-dots"></span><span class="dish-price">12,00 €</span></div></li>
+            <li class="dish" data-a="lacteos frutos-secos sulfitos"><div class="dish-top"><span class="dish-name">Ensalada de queso de cabra, frutos secos y vinagreta de miel</span><span class="dish-dots"></span><span class="dish-price">13,50 €</span></div><div class="dish-tags"><span>Lácteos</span><span>Frutos secos</span><span>Sulfitos</span></div></li>
+            <li class="dish" data-a=""><div class="dish-top"><span class="dish-name">Ensalada de brotes gourmet</span><span class="dish-dots"></span><span class="dish-price">12,95 €</span></div></li>
+            <li class="dish" data-a="huevos moluscos"><div class="dish-top"><span class="dish-name">Ensaladilla de piparra</span><span class="dish-dots"></span><span class="dish-price">12,00 €</span></div><div class="dish-tags"><span>Huevos</span><span>Moluscos</span></div></li>
+          </ul>
+        </section>
+
+        <!-- 04 Raciones -->
+        <section class="menu-section" id="raciones">
+          <header class="menu-section-head reveal">
+            <span class="num">04</span>
+            <div><h2>Raciones</h2><p>Para compartir en la mesa</p></div>
+          </header>
+          <ul class="menu-list">
+            <li class="dish" data-a="gluten huevos lacteos"><div class="dish-top"><span class="dish-name">Croquetas de jamón caseras<small>8 unidades</small></span><span class="dish-dots"></span><span class="dish-price">14,00 €</span></div><div class="dish-tags"><span>Gluten</span><span>Huevos</span><span>Lácteos</span></div></li>
+            <li class="dish" data-a="gluten huevos lacteos"><div class="dish-top"><span class="dish-name">Croqueta de jamón casera<small>Unidad</small></span><span class="dish-dots"></span><span class="dish-price">1,85 €</span></div><div class="dish-tags"><span>Gluten</span><span>Huevos</span><span>Lácteos</span></div></li>
+            <li class="dish" data-a="huevos"><div class="dish-top"><span class="dish-name">Patatas bravas</span><span class="dish-dots"></span><span class="dish-price">9,50 €</span></div><div class="dish-tags"><span>Huevos</span></div></li>
+            <li class="dish" data-a=""><div class="dish-top"><span class="dish-name">Carne madurada fileteada<small>Para 2 personas</small></span><span class="dish-dots"></span><span class="dish-price">33,00 €</span></div></li>
+            <li class="dish" data-a="sulfitos"><div class="dish-top"><span class="dish-name">Oreja confitada con salsa</span><span class="dish-dots"></span><span class="dish-price">16,50 €</span></div><div class="dish-tags"><span>Sulfitos</span></div></li>
+            <li class="dish" data-a="moluscos gluten"><div class="dish-top"><span class="dish-name">Calamares a la plancha o a la andaluza</span><span class="dish-dots"></span><span class="dish-price">21,50 €</span></div><div class="dish-tags"><span>Moluscos</span><span>Gluten</span></div></li>
+            <li class="dish" data-a="moluscos"><div class="dish-top"><span class="dish-name">Zamburiñas<small>Unidad</small></span><span class="dish-dots"></span><span class="dish-price">3,00 €</span></div><div class="dish-tags"><span>Moluscos</span></div></li>
+            <li class="dish" data-a="crustaceos"><div class="dish-top"><span class="dish-name">Gamba al ajillo</span><span class="dish-dots"></span><span class="dish-price">17,00 €</span></div><div class="dish-tags"><span>Crustáceos</span></div></li>
+            <li class="dish" data-a="gluten huevos crustaceos"><div class="dish-top"><span class="dish-name">Tortillita de camarón</span><span class="dish-dots"></span><span class="dish-price">3,00 €</span></div><div class="dish-tags"><span>Gluten</span><span>Huevos</span><span>Crustáceos</span></div></li>
+          </ul>
+          <figure class="menu-feature reveal" style="margin-inline:0"><img src="assets/img/tortillitas.webp" alt="" loading="lazy" /><p>Tortillitas de camarón, crujientes y finas como deben ser.</p></figure>
+        </section>
+
+        <!-- 05 Recomendaciones -->
+        <section class="menu-section" id="recomendaciones">
+          <header class="menu-section-head reveal">
+            <span class="num">05</span>
+            <div><h2>Recomendaciones</h2><p>Lo que te sugiere la casa</p></div>
+          </header>
+          <ul class="menu-list">
+            <li class="dish" data-a=""><div class="dish-top"><span class="dish-name">Alitas de pollo<small>6 unidades</small></span><span class="dish-dots"></span><span class="dish-price">7,50 €</span></div></li>
+            <li class="dish" data-a="gluten huevos crustaceos"><div class="dish-top"><span class="dish-name">Flor de alcachofa confitada con carbonara de parmesano y jamón de pato</span><span class="dish-dots"></span><span class="dish-price">6,00 €</span></div><div class="dish-tags"><span>Gluten</span><span>Huevos</span><span>Crustáceos</span></div></li>
+            <li class="dish" data-a="crustaceos"><div class="dish-top"><span class="dish-name">Pulpo a la plancha con parmentier de patatas y pimentón</span><span class="dish-dots"></span><span class="dish-price">33,00 €</span></div><div class="dish-tags"><span>Crustáceos</span></div></li>
+            <li class="dish" data-a="pescado soja sesamo"><div class="dish-top"><span class="dish-name">Tataki de atún rojo</span><span class="dish-dots"></span><span class="dish-price">22,00 €</span></div><div class="dish-tags"><span>Pescado</span><span>Soja</span><span>Sésamo</span></div></li>
+          </ul>
+        </section>
+
+        <!-- 06 Hamburguesas -->
+        <section class="menu-section" id="hamburguesas">
+          <header class="menu-section-head reveal">
+            <span class="num">06</span>
+            <div><h2>Hamburguesas</h2><p>Jugosas, a la plancha y con sus patatas</p></div>
+          </header>
+          <ul class="menu-list">
+            <li class="dish" data-a="gluten lacteos huevos mostaza"><div class="dish-top"><span class="dish-name">Hamburguesa Smash</span><span class="dish-dots"></span><span class="dish-price">11,99 €</span></div><div class="dish-tags"><span>Gluten</span><span>Lácteos</span><span>Huevos</span><span>Mostaza</span></div></li>
+            <li class="dish" data-a="gluten lacteos huevos mostaza"><div class="dish-top"><span class="dish-name">Doble Smash</span><span class="dish-dots"></span><span class="dish-price">13,99 €</span></div><div class="dish-tags"><span>Gluten</span><span>Lácteos</span><span>Huevos</span><span>Mostaza</span></div></li>
+            <li class="dish" data-a="gluten lacteos huevos mostaza"><div class="dish-top"><span class="dish-name">Buey Vaca</span><span class="dish-dots"></span><span class="dish-price">14,99 €</span></div><div class="dish-tags"><span>Gluten</span><span>Lácteos</span><span>Huevos</span><span>Mostaza</span></div></li>
+            <li class="dish" data-a="gluten lacteos huevos mostaza"><div class="dish-top"><span class="dish-name">Angus</span><span class="dish-dots"></span><span class="dish-price">18,00 €</span></div><div class="dish-tags"><span>Gluten</span><span>Lácteos</span><span>Huevos</span><span>Mostaza</span></div></li>
+            <li class="dish" data-a="gluten lacteos huevos mostaza"><div class="dish-top"><span class="dish-name">Ibérica</span><span class="dish-dots"></span><span class="dish-price">13,50 €</span></div><div class="dish-tags"><span>Gluten</span><span>Lácteos</span><span>Huevos</span><span>Mostaza</span></div></li>
+          </ul>
+          <figure class="menu-feature reveal" style="margin-inline:0"><img src="assets/img/hamburguesa.png" alt="" loading="lazy" /><p>Pan brioche, carne jugosa y patatas cortadas a mano.</p></figure>
+        </section>
+
+        <!-- 07 Sándwiches -->
+        <section class="menu-section" id="sandwiches">
+          <header class="menu-section-head reveal">
+            <span class="num">07</span>
+            <div><h2>Sándwiches</h2><p>Los clásicos de la barra</p></div>
+          </header>
+          <ul class="menu-list">
+            <li class="dish" data-a="gluten lacteos"><div class="dish-top"><span class="dish-name">Mixto Las Palmeras</span><span class="dish-dots"></span><span class="dish-price">4,00 €</span></div><div class="dish-tags"><span>Gluten</span><span>Lácteos</span></div></li>
+            <li class="dish" data-a="gluten lacteos huevos"><div class="dish-top"><span class="dish-name">Mixto Las Palmeras con huevo</span><span class="dish-dots"></span><span class="dish-price">4,75 €</span></div><div class="dish-tags"><span>Gluten</span><span>Lácteos</span><span>Huevos</span></div></li>
+            <li class="dish" data-a="gluten huevos lacteos"><div class="dish-top"><span class="dish-name">Lesama</span><span class="dish-dots"></span><span class="dish-price">7,50 €</span></div><div class="dish-tags"><span>Gluten</span><span>Huevos</span><span>Lácteos</span></div></li>
+            <li class="dish" data-a="gluten huevos pescado lacteos"><div class="dish-top"><span class="dish-name">Vegetal</span><span class="dish-dots"></span><span class="dish-price">6,00 €</span></div><div class="dish-tags"><span>Gluten</span><span>Huevos</span><span>Pescado</span><span>Lácteos</span></div></li>
+          </ul>
+        </section>
+
+        <div class="menu-divider" aria-hidden="true"><img src="assets/img/hoja-palmera.svg" alt="" />Bebidas</div>
+
+        <!-- 08 Cafés -->
+        <section class="menu-section" id="cafes">
+          <header class="menu-section-head reveal">
+            <span class="num">08</span>
+            <div><h2>Cafés</h2><p>Recién hechos, como a ti te gustan</p></div>
+          </header>
+          <ul class="menu-list">
+            <li class="dish" data-a=""><div class="dish-top"><span class="dish-name">Café solo</span><span class="dish-dots"></span><span class="dish-price">1,90 €</span></div></li>
+            <li class="dish" data-a="lacteos"><div class="dish-top"><span class="dish-name">Café con leche</span><span class="dish-dots"></span><span class="dish-price">1,90 €</span></div><div class="dish-tags"><span>Lácteos</span></div></li>
+            <li class="dish" data-a=""><div class="dish-top"><span class="dish-name">Café americano</span><span class="dish-dots"></span><span class="dish-price">1,90 €</span></div></li>
+            <li class="dish" data-a=""><div class="dish-top"><span class="dish-name">Café doble</span><span class="dish-dots"></span><span class="dish-price">2,40 €</span></div></li>
+            <li class="dish" data-a="lacteos"><div class="dish-top"><span class="dish-name">Café bombón</span><span class="dish-dots"></span><span class="dish-price">2,20 €</span></div><div class="dish-tags"><span>Lácteos</span></div></li>
+          </ul>
+        </section>
+
+        <!-- 09 Bebidas -->
+        <section class="menu-section" id="bebidas">
+          <header class="menu-section-head reveal">
+            <span class="num">09</span>
+            <div><h2>Bebidas</h2><p>Calientes, frías y naturales</p></div>
+          </header>
+          <ul class="menu-list">
+            <li class="dish" data-a="lacteos"><div class="dish-top"><span class="dish-name">Chai Spiced</span><span class="dish-dots"></span><span class="dish-price">3,00 €</span></div><div class="dish-tags"><span>Lácteos</span></div></li>
+            <li class="dish" data-a="lacteos"><div class="dish-top"><span class="dish-name">ColaCao</span><span class="dish-dots"></span><span class="dish-price">2,00 €</span></div><div class="dish-tags"><span>Lácteos</span></div></li>
+            <li class="dish" data-a=""><div class="dish-top"><span class="dish-name">Infusión premium</span><span class="dish-dots"></span><span class="dish-price">2,00 €</span></div></li>
+            <li class="dish" data-a=""><div class="dish-top"><span class="dish-name">Zumo de naranja natural</span><span class="dish-dots"></span><span class="dish-price">3,20 €</span></div></li>
+          </ul>
+        </section>
+
+        <p class="menu-legal">Si tienes alguna alergia o intolerancia, pregúntanos: te informaremos encantados.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <img class="leaf leaf--br" src="assets/img/hoja-palmera.svg" alt="" aria-hidden="true" />
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><img src="assets/img/logo.png" alt="" /><span>Las Palmeras</span></div>
+          <p>Cafetería y bar en la Plaza Mayor de Ciempozuelos. Trato familiar, buena cocina y la terraza de siempre.</p>
+        </div>
+        <div>
+          <h4>Navega</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="carta.html">Carta</a></li>
+            <li><a href="promociones.html">Promociones</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Síguenos</h4>
+          <ul>
+            <li><a href="https://www.instagram.com/cpmlaspalmeras/" target="_blank" rel="noopener">Instagram · @cpmlaspalmeras</a></li>
+            <li><a href="index.html#donde-estamos">Plaza Mayor, Ciempozuelos</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Cafetería Las Palmeras</span>
+        <span>Hecho con cariño en Ciempozuelos</span>
+      </div>
+    </div>
+  </footer>
+  <div class="sunset-line"></div>
+
+</body>
+</html>

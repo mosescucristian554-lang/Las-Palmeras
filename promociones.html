@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Promociones · Las Palmeras</title>
+  <meta name="description" content="Promociones de la Cafetería Las Palmeras en Ciempozuelos: partidos en pantalla, cubos de cerveza y planes con amigos." />
+  <meta name="theme-color" content="#fbf6ee" />
+  <link rel="icon" href="assets/img/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700&family=Pinyon+Script&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=20261019" />
+  <script defer src="main.js?v=20261019"></script>
+</head>
+<body>
+
+  <!-- ===== Navegación ===== -->
+  <header class="nav" data-nav>
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Las Palmeras — inicio">
+        <img src="assets/img/logo.png" alt="" />
+        <span>Las Palmeras</span>
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span></button>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="carta.html">Carta</a></li>
+        <li><a href="promociones.html" aria-current="page">Promociones</a></li>
+        <li>
+          <a class="nav-ig" href="https://www.instagram.com/cpmlaspalmeras/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            Instagram
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <img class="page-head-bg" src="assets/img/terraza-noche.png" alt="" />
+      <img class="leaf leaf--tl" src="assets/img/hoja-palmera.svg" alt="" aria-hidden="true" />
+      <img class="leaf leaf--tr" src="assets/img/hoja-palmera.svg" alt="" aria-hidden="true" />
+      <div class="container">
+        <p class="kicker rise">Planes en Las Palmeras</p>
+        <h1 class="page-title rise" data-delay="1"><span class="script">Promociones</span></h1>
+        <p class="page-sub rise" data-delay="2">Partidos en pantalla, cubos bien fríos y la mejor compañía. Aquí el fútbol se vive en familia.</p>
+      </div>
+    </section>
+
+    <section class="promos">
+      <div class="container">
+        <div class="promo-grid">
+          <article class="promo reveal" data-tilt>
+            <span class="promo-badge">Finalissima</span>
+            <button class="promo-media" type="button" data-zoom aria-label="Ampliar cartel Finalissima España contra Argentina">
+              <img src="assets/img/promo-finalissima.webp" alt="Cartel: Finalissima España vs Argentina en CPM Las Palmeras, con cubo de cervezas Mahou" loading="lazy" />
+            </button>
+            <div class="promo-body">
+              <h2>España <em>vs</em> Argentina</h2>
+              <p>Vive la Finalissima en nuestra pantalla, con un cubo de Mahou bien frío y algo para picar. Ven pronto, que las mesas vuelan.</p>
+              <div class="promo-meta"><span>Partido en pantalla</span><span>Cubo de cervezas</span></div>
+            </div>
+          </article>
+
+          <article class="promo reveal" data-delay="1" data-tilt>
+            <span class="promo-badge">Cubo + partido</span>
+            <button class="promo-media" type="button" data-zoom aria-label="Ampliar cartel Especial cubo más partido Bélgica contra España">
+              <img src="assets/img/promo-cubo-partido.webp" alt="Cartel: Especial cubo + partido, Bélgica vs España, viernes 10/7 a las 21:00" loading="lazy" />
+            </button>
+            <div class="promo-body">
+              <h2>Bélgica <em>vs</em> España</h2>
+              <p>Especial cubo de Mahou + partido. Reserva tu sitio con los amigos y anima a la Roja con nosotros.</p>
+              <div class="promo-meta"><span>Viernes 10/7</span><span>21:00 h</span><span>Especial cubo</span></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="promo-cta reveal">
+          <img class="leaf leaf--br" src="assets/img/hoja-palmera.svg" alt="" aria-hidden="true" />
+          <p class="kicker" style="justify-content:center">No te pierdas ninguna</p>
+          <h2>Las próximas promociones, <em>primero en Instagram</em></h2>
+          <p>Partidos, tartas de la semana y planes especiales. Síguenos y entérate antes que nadie.</p>
+          <a class="btn btn-sun" href="https://www.instagram.com/cpmlaspalmeras/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            @cpmlaspalmeras
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="lightbox" data-lightbox aria-label="Cartel ampliado">
+    <img src="" alt="" />
+    <button type="button" aria-label="Cerrar">×</button>
+  </dialog>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <img class="leaf leaf--br" src="assets/img/hoja-palmera.svg" alt="" aria-hidden="true" />
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><img src="assets/img/logo.png" alt="" /><span>Las Palmeras</span></div>
+          <p>Cafetería y bar en la Plaza Mayor de Ciempozuelos. Trato familiar, buena cocina y la terraza de siempre.</p>
+        </div>
+        <div>
+          <h4>Navega</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="carta.html">Carta</a></li>
+            <li><a href="promociones.html">Promociones</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Síguenos</h4>
+          <ul>
+            <li><a href="https://www.instagram.com/cpmlaspalmeras/" target="_blank" rel="noopener">Instagram · @cpmlaspalmeras</a></li>
+            <li><a href="index.html#donde-estamos">Plaza Mayor, Ciempozuelos</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Cafetería Las Palmeras</span>
+        <span>Hecho con cariño en Ciempozuelos</span>
+      </div>
+    </div>
+  </footer>
+  <div class="sunset-line"></div>
+
+</body>
+</html>

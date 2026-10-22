@@ -135,6 +135,65 @@
     updateBar();
   }
 
+  /* Inicio: horario — marca el día de hoy y dice si está abierto ahora (hora de Madrid) */
+  function initHours() {
+    var list = document.querySelector("[data-hours]");
+    if (!list) return;
+    // Minutos desde las 00:00; 1440 = medianoche. Índice 0 = domingo.
+    var SCHEDULE = {
+      0: [[600, 900]],
+      1: [],
+      2: [],
+      3: [[540, 840]],
+      4: [[540, 840], [1230, 1410]],
+      5: [[570, 840], [1230, 1440]],
+      6: [[570, 900], [1230, 1440]]
+    };
+    var DAYS = ["el domingo", "el lunes", "el martes", "el miércoles", "el jueves", "el viernes", "el sábado"];
+    var hhmm = function (m) {
+      m = m % 1440;
+      return ("0" + Math.floor(m / 60)).slice(-2) + ":" + ("0" + (m % 60)).slice(-2);
+    };
+
+    var now = new Date();
+    var day = now.getDay(), mins = now.getHours() * 60 + now.getMinutes();
+    try {
+      var parts = new Intl.DateTimeFormat("en-GB", {
+        timeZone: "Europe/Madrid", weekday: "short", hour: "2-digit", minute: "2-digit", hourCycle: "h23"
+      }).formatToParts(now);
+      var get = function (t) { return (parts.filter(function (p) { return p.type === t; })[0] || {}).value; };
+      day = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].indexOf(get("weekday"));
+      mins = parseInt(get("hour"), 10) * 60 + parseInt(get("minute"), 10);
+    } catch (e) { /* sin Intl: hora local del dispositivo */ }
+
+    var today = list.querySelector('[data-day="' + day + '"]');
+    if (today) today.classList.add("is-today");
+
+    var box = document.querySelector("[data-hours-status]");
+    var text = document.querySelector("[data-hours-status-text]");
+    if (!box || !text) return;
+
+    var open = (SCHEDULE[day] || []).filter(function (r) { return mins >= r[0] && mins < r[1]; })[0];
+    if (open) {
+      text.textContent = "Abierto ahora · hasta las " + hhmm(open[1]);
+      box.classList.add("is-open");
+    } else {
+      var msg = "Ahora cerrado";
+      for (var i = 0; i < 8; i++) {
+        var d = (day + i) % 7;
+        var next = (SCHEDULE[d] || []).filter(function (r) { return i > 0 || r[0] > mins; })[0];
+        if (next) {
+          var when = i === 0 ? "hoy" : i === 1 ? "mañana" : DAYS[d];
+          msg = "Ahora cerrado · abrimos " + when + " a las " + hhmm(next[0]);
+          break;
+        }
+      }
+      text.textContent = msg;
+      box.classList.add("is-closed");
+    }
+    box.hidden = false;
+  }
+
   /* Carta: pestaña activa según la sección visible */
   function initMenuSpy() {
     var tabs = document.querySelectorAll("[data-menu-tabs] a");
@@ -157,28 +216,32 @@
     sections.forEach(function (s) { io.observe(s); });
   }
 
-  /* Carta: filtro de alérgenos */
+  /* Carta: filtro de alérgenos — tacha (sin ocultar) los platos que llevan los alérgenos marcados */
   function initAllergens() {
     var chips = document.querySelectorAll("[data-allergen]");
     if (!chips.length) return;
     var note = document.querySelector("[data-allergen-note]");
+    var clear = document.querySelector("[data-allergen-clear]");
     var dishes = document.querySelectorAll(".dish");
     var active = {};
+
     var update = function () {
       var keys = Object.keys(active).filter(function (k) { return active[k]; });
-      var hidden = 0;
+      var marked = 0;
       dishes.forEach(function (d) {
         var tags = (d.getAttribute("data-a") || "").split(" ");
-        var excluded = keys.some(function (k) { return tags.indexOf(k) !== -1; });
-        d.classList.toggle("is-excluded", excluded);
-        if (excluded) hidden++;
+        var has = keys.some(function (k) { return tags.indexOf(k) !== -1; });
+        d.classList.toggle("is-excluded", has);
+        if (has) marked++;
       });
       if (note) {
         note.textContent = keys.length
-          ? hidden + " platos contienen los alérgenos marcados y aparecen tachados."
-          : "Marca un alérgeno para señalar los platos que lo contienen.";
+          ? marked + " de " + dishes.length + " platos llevan los alérgenos marcados y aparecen tachados."
+          : "Toca un alérgeno y tachamos los platos que lo llevan.";
       }
+      if (clear) clear.hidden = keys.length === 0;
     };
+
     chips.forEach(function (c) {
       c.addEventListener("click", function () {
         var k = c.getAttribute("data-allergen");
@@ -187,6 +250,13 @@
         update();
       });
     });
+    if (clear) {
+      clear.addEventListener("click", function () {
+        active = {};
+        chips.forEach(function (c) { c.setAttribute("aria-pressed", "false"); });
+        update();
+      });
+    }
   }
 
   /* Promociones: tilt suave + lightbox */
@@ -231,6 +301,7 @@
     safe(initReveals, "initReveals");
     safe(initHeroParallax, "initHeroParallax");
     safe(initCarousel, "initCarousel");
+    safe(initHours, "initHours");
     safe(initMenuSpy, "initMenuSpy");
     safe(initAllergens, "initAllergens");
     safe(initTilt, "initTilt");

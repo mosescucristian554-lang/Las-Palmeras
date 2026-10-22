@@ -10,8 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700&family=Pinyon+Script&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20261019" />
-  <script defer src="main.js?v=20261019"></script>
+  <link rel="stylesheet" href="styles.css?v=20261022h" />
+  <script defer src="main.js?v=20261022h"></script>
 </head>
 <body>
 
@@ -47,8 +47,8 @@
         <h1 class="page-title rise" data-delay="1">La <span class="script">Carta</span></h1>
         <p class="page-sub rise" data-delay="2">Del primer café de la mañana a la última ración de la noche. Todo pensado para compartir a la sombra de las palmeras.</p>
 
-        <div class="allergen-bar rise" data-delay="3" role="group" aria-label="Señalar platos con alérgenos">
-          <span>Alérgenos</span>
+        <div class="allergen-bar rise" data-delay="3" role="group" aria-label="Tachar platos que contienen estos alérgenos">
+          <span>Alergias:</span>
           <button class="chip" type="button" data-allergen="gluten" aria-pressed="false">Gluten</button>
           <button class="chip" type="button" data-allergen="huevos" aria-pressed="false">Huevos</button>
           <button class="chip" type="button" data-allergen="lacteos" aria-pressed="false">Lácteos</button>
@@ -61,7 +61,7 @@
           <button class="chip" type="button" data-allergen="mostaza" aria-pressed="false">Mostaza</button>
           <button class="chip" type="button" data-allergen="sulfitos" aria-pressed="false">Sulfitos</button>
         </div>
-        <p class="allergen-note" data-allergen-note aria-live="polite">Marca un alérgeno para señalar los platos que lo contienen.</p>
+        <p class="allergen-note" aria-live="polite"><span data-allergen-note>Toca un alérgeno y tachamos los platos que lo llevan.</span> <button class="allergen-clear" type="button" data-allergen-clear hidden>Quitar marcas</button></p>
       </div>
     </section>
 
@@ -248,6 +248,17 @@
             <li><a href="index.html">Inicio</a></li>
             <li><a href="carta.html">Carta</a></li>
             <li><a href="promociones.html">Promociones</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Horario</h4>
+          <ul class="footer-hours">
+            <li><span>Lun y Mar</span><span>Descanso</span></li>
+            <li><span>Mié</span><span>09:00–14:00</span></li>
+            <li><span>Jue</span><span>09:00–14:00 · 20:30–23:30</span></li>
+            <li><span>Vie</span><span>09:30–14:00 · 20:30–00:00</span></li>
+            <li><span>Sáb</span><span>09:30–15:00 · 20:30–00:00</span></li>
+            <li><span>Dom</span><span>10:00–15:00</span></li>
           </ul>
         </div>
         <div>

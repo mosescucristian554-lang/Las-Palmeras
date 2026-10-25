@@ -7,11 +7,9 @@
   <meta name="description" content="Carta de la Cafetería Las Palmeras en Ciempozuelos: desayunos, tostas, ensaladas gourmet, raciones, hamburguesas, sándwiches, cafés y bebidas." />
   <meta name="theme-color" content="#fbf6ee" />
   <link rel="icon" href="assets/img/logo.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700&family=Pinyon+Script&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20261022h" />
-  <script defer src="main.js?v=20261022h"></script>
+  <link rel="stylesheet" href="fonts.css?v=20261025" />
+  <link rel="stylesheet" href="styles.css?v=20261025" />
+  <script defer src="main.js?v=20261025"></script>
 </head>
 <body>
 
@@ -60,6 +58,9 @@
           <button class="chip" type="button" data-allergen="sesamo" aria-pressed="false">Sésamo</button>
           <button class="chip" type="button" data-allergen="mostaza" aria-pressed="false">Mostaza</button>
           <button class="chip" type="button" data-allergen="sulfitos" aria-pressed="false">Sulfitos</button>
+          <button class="chip" type="button" data-allergen="apio" aria-pressed="false">Apio</button>
+          <button class="chip" type="button" data-allergen="altramuces" aria-pressed="false">Altramuces</button>
+          <button class="chip" type="button" data-allergen="cacahuetes" aria-pressed="false">Cacahuetes</button>
         </div>
         <p class="allergen-note" aria-live="polite"><span data-allergen-note>Toca un alérgeno y tachamos los platos que lo llevan.</span> <button class="allergen-clear" type="button" data-allergen-clear hidden>Quitar marcas</button></p>
       </div>
@@ -228,7 +229,7 @@
           </ul>
         </section>
 
-        <p class="menu-legal">Si tienes alguna alergia o intolerancia, pregúntanos: te informaremos encantados.</p>
+        <p class="menu-legal">Alérgenos indicados según los 14 de declaración obligatoria (Reglamento UE 1169/2011). Precios con IVA incluido. Si tienes alguna alergia o intolerancia, pregúntanos: te informaremos encantados.</p>
       </div>
     </div>
   </main>
@@ -271,6 +272,7 @@
       </div>
       <div class="footer-bottom">
         <span>© <span data-year>2026</span> Cafetería Las Palmeras</span>
+        <nav class="footer-legal" aria-label="Textos legales"><a href="aviso-legal.html">Aviso legal</a><a href="privacidad.html">Privacidad</a><a href="cookies.html">Cookies</a></nav>
         <span>Hecho con cariño en Ciempozuelos</span>
       </div>
     </div>

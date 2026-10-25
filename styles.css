@@ -607,6 +607,38 @@ h1 em, h2 em, h3 em { font-style: italic; color: var(--sun); }
   font-size: .8rem; color: #8f8b80;
 }
 .sunset-line { height: 3px; background: var(--sunset); }
+.footer-legal { display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; }
+.footer-legal a { color: #b9b4a6; text-decoration: underline; text-decoration-color: rgba(240,178,62,.4); text-underline-offset: 3px; }
+.footer-legal a:hover { color: var(--gold); }
+
+/* ==========================================================================
+   Textos legales (Aviso legal / Privacidad / Cookies)
+   ========================================================================== */
+.legal { padding: 0 0 clamp(4rem, 8vw, 6rem); }
+.legal-body {
+  max-width: 780px; margin-inline: auto;
+  background: var(--paper); border: 1px solid var(--line); border-radius: calc(var(--radius) + 6px);
+  padding: clamp(1.6rem, 5vw, 3.2rem);
+  box-shadow: var(--shadow);
+}
+.legal-body h2 { font-size: clamp(1.5rem, 3vw, 1.9rem); margin: 2.4rem 0 .8rem; }
+.legal-body h2:first-of-type { margin-top: 0; }
+.legal-body p, .legal-body li { color: var(--ink-soft); font-size: 1rem; }
+.legal-body ul { padding-left: 1.2rem; }
+.legal-body a { color: var(--sun); text-decoration: underline; text-underline-offset: 3px; }
+.legal-data { display: grid; grid-template-columns: max-content 1fr; gap: .55rem 1.4rem; margin: 0; }
+.legal-data dt { font-weight: 700; color: var(--ink); }
+.legal-data dd { margin: 0; color: var(--ink-soft); }
+.legal-updated { font-size: .85rem; color: var(--ink-mute); margin-top: 2.4rem; }
+.pendiente {
+  background: rgba(240,178,62,.28); color: var(--ink);
+  padding: .05rem .4rem; border-radius: 6px; font-weight: 600;
+  outline: 1px dashed var(--sun);
+}
+@media (max-width: 520px) {
+  .legal-data { grid-template-columns: 1fr; gap: .15rem; }
+  .legal-data dd { margin-bottom: .6rem; }
+}
 
 /* ==========================================================================
    Cabecera de páginas interiores (Carta / Promociones)
